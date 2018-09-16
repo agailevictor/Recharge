@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pay / Recharge</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce class="theme-color">
+    <div class="login-content">
+        <div class="appicon" align="center">
+          <h2>Pay / Recharge for Others </h2>
+        </div>
+          <ion-item>
+              <ion-input type="number" placeholder="Enter Mobile Number" name="mobilenumber"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-input type="number" placeholder="Enter Amount" [(ngModel)]="inputAmount"></ion-input>
+          </ion-item>
+          <!-- <ion-item>
+            <ion-label>Choose Carrier</ion-label>
+            <ion-select>
+              <ion-option value="M">Maxis</ion-option>
+              <ion-option value="U">U Mobile</ion-option>
+              <ion-option value="T">Tune Talk</ion-option>
+              <ion-option value="D">Digi</ion-option>
+            </ion-select>
+          </ion-item> -->
+          <ion-row>
+              <button ion-button block (click)="proceedToPay()">Proceed</button>
+          </ion-row>
+          <ion-row>
+              <button ion-button block icon-end (click)="scan()">
+                  Scan QR Code
+                  <ion-icon name="qr-scanner"></ion-icon>
+                </button>
+          </ion-row>
+      </div>
+      <div class="footer" align="center">
+        <!-- <ion-icon name="bonfire"></ion-icon>
+        <br/> V 0.0.2 -->
+        <!-- <br/> © JaaG, -->
+        <br/> © All Rights Reserved
+      </div>
+</ion-content>

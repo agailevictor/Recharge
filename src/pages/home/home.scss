@@ -1,0 +1,53 @@
+page-home {
+  background: linear-gradient(37deg, #14A5CC 69%, #18B9B2 100%);
+  position: relative;
+    .card {
+        // box-shadow: 0 4px 8px 0 #619de9;
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+      
+      .title {
+        // color: black;
+        // font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        margin-top: 7px;
+      }
+            
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+      
+      button:hover, a:hover {
+        opacity: 0.7;
+      }
+      .theme-color {
+        background: url(/assets/imgs/bg_pattern.svg) repeat;
+      }
+      h2 {
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        margin-top: 7px;
+      }
+      .user_avatar {
+        // margin-top: 150px;
+      }
+      .footer {
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        color: #fff;
+        font-size: 0.75em;
+        img {
+          width: 100px;
+          margin-bottom: 5px;
+        }
+      }
+}

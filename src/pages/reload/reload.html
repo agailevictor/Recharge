@@ -1,0 +1,33 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Top Up</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-bounce class="theme-color">
+  <div class="login-content">
+      <div class="appicon" align="center">
+        <h2>Top Up Own Account</h2>
+      </div>
+        <ion-item>
+          <ion-label>Mobile +919996554230 </ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-input type="number" placeholder="Enter Amount" [(ngModel)]="inputAmount"></ion-input>
+        </ion-item>
+        <ion-row>
+            <button ion-button block (click)="proceedToPay()">Proceed</button>
+        </ion-row>
+    </div>
+    <div class="footer" align="center">
+        <!-- <ion-icon name="bonfire"></ion-icon>
+        <br/> V 0.0.2 -->
+        <!-- <br/> © JaaG, -->
+        <br/> © All Rights Reserved
+    </div>
+</ion-content>
